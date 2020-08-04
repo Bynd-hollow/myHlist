@@ -1,0 +1,34 @@
+{
+	"name": "myHlist",
+	"version": "1.0",
+	"description": "An extension that helps organise your doujinshi from NHentai and improve your nutting experience",
+	"manifest_version": 2,
+	"content_scripts": [
+		{
+			"matches": ["https://nhentai.net/*"],
+			"js": ["Content.js"]
+		}
+
+	],
+	"browser_action":{
+		"default_popup": "popup.html",
+		"default_icon": "Icon.png",
+		"default_title": "myHlist"
+	},
+	"permissions": [
+		"storage",
+		"tabs",
+		"https://nhentai.net/*",
+		"https://i.nhentai.net/*"
+	],
+	"author": "Beyond.hollow",
+	"commands": {
+		"_execute_browser_action": {
+			"suggested_key": {
+				"default": "Ctrl+Shift+H",
+				"mac": "MacCtrl+Shift+H"
+			},
+			"description": "Opens popup.html"
+		}
+	}
+}
