@@ -1,0 +1,53 @@
+ <!DOCTYPE html>
+ <html>
+  <head>
+    <title>myHlist</title>
+    <script src="popup.js"></script>
+       <!-- Why am I loading the script twice? Wht ever it works lol, but if something fucks up I know why  -->
+    <link rel="stylesheet" type="text/css" href="css/popup.css">
+  </head>
+<body>
+  <header>
+    <img class="HTitle" style=" margin-top:0 px; margin-left: 100 px;"height="80px" src="assets/HTitle.png">
+</header>
+<ul>
+  <li><a href="Add.html">Add</a></li>
+  <li><a href="MyList.html">MyList</a></li>
+  <li><a target="_blank" href="About.html">About</a></li>
+  <li><a href="Hquery.html">H</a></li>
+</ul>
+<div id="selection">
+  <a id="newList"> <img src="assets/PlaceHold.png" width="90" height="90" title="Create a new list"></a>
+
+</div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <p>List name:</p>
+    <input type="text" id="newListName" class="field">
+    <button id="makeList">Create new List</button>
+    <br>
+    <p>or</p>
+    <br>
+    <button>Import list from discord</button>
+    <button id="NoB">Cancel</button>
+  </div>
+
+</div>
+
+<script src="popup.js"></script>
+<script src="DisplayLists.js"></script>
+<script src="newList.js"></script>
+<script src="Manager.js"></script>
+<script src="Settings.js"></script>
+
+
+<footer>
+  <p>Made by Beyond.hollow<br>
+  <a target="_blank" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">google.com</a></p>
+</footer>
+</body>
+</html>

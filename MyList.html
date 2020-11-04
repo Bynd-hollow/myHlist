@@ -1,0 +1,49 @@
+ <!DOCTYPE html>
+ <html>
+  <head>
+    <title>myHlist</title>
+    <link rel="stylesheet" type="text/css" href="css/popup.css">
+    <link rel="stylesheet" type="text/css" href="css/BrowseList.css">
+  </head>
+<body>
+  <header>
+    <img class="HTitle" style=" margin-top:0 px; margin-left: 100 px;"height="80px" src="assets/HTitle.png">
+</header>
+<ul>
+  <li><a href="Add.html">Add</a></li>
+  <li><a href="#contact" class="active">MyList</a></li>
+  <li><a target="_blank" href="About.html">About</a></li>
+  <li><a href="Hide.html" style=" padding-right: 15px;">H</a></li>
+</ul>
+<input type="text" id="searchMyList" class="field"placeholder="Search for something in your list">
+<div id="in"></div>
+<br>
+<br>
+<table id="stableT" class="STable" style="width: 100%;">
+</table>
+
+<div id="pagess">
+  <div id="pg2">
+    <p id="pTcontent"></p>
+  <input type="text" id="pageNm" class="field">
+  <button id="save">Save</button>
+</div>
+</div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <p id="grood">Are you sure you want to delete</p>
+    <p id="mood"></p>
+    <button id="yesB">Yes</button>
+    <button id="NoB">No</button>
+  </div>
+
+</div>
+<script src="MyList.js"></script>
+<script src="Search.js"></script>
+<script src="Settings.js"></script>
+</body>
+</html>
