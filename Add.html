@@ -1,0 +1,46 @@
+ <!DOCTYPE html>
+ <html>
+  <head>
+    <title>myHlist</title>
+    <link rel="stylesheet" type="text/css" href="CSS/popup.css">
+    <link rel="stylesheet" type="text/css" href="CSS/selector.css">
+    <link rel="stylesheet" type="text/css" href="CSS/Adding.css">
+  </head>
+<body>
+  <header>
+    <img class="HTitle" style=" margin-top:0 px; margin-left: 100 px;"height="80px" src="Assets/HTitle.png">
+</header>
+<ul>
+  <li><a href="Add.html" class="active">Add</a></li>
+  <li><a href="MyList.html">MyList</a></li>
+  <li><a target="_blank" href="About.html">About</a></li>
+  <li><a href="Hide.html" style=" padding-right: 15px;">H</a></li>
+</ul>
+  <button id="dropDown"></button>
+  <button type="submit" id="switch">
+    <img src="Assets/ChangeIC.png" id="change" width="20" ></img>
+    <p id="sTC" style="float: left; padding: 0 0 0 20px; margin: 0px;"></p>
+  </button>
+ <input form autocomplete="off" type="text" id="addToList" class="field" placeholder="&quot;That&quot; code">
+ <input form autocomplete="off" type="text" id="addToList2" class="field" placeholder="Nickname">
+ <button type="submit" id="buttAdd"class="fieldbutton">Add to my list</button>
+ <br>
+ <br>
+ <input type="text" id="addToList3" class="field" placeholder="Nickname">
+ <button type="submit" id="addCurrent"class="searchbutton2">Add Current page</button>
+ <br>
+ <button type="submit" id="addCurrentW"class="fieldbutton">Add current page with full data set</button>
+ <br>
+ <h1 id="addedd">Added to your list !</h1>
+
+ <div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div id="mood"></div>
+  </div>
+
+   <script src="AddHlist.js"></script>
+   <script src="Settings.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+.label {font-size: 0.75em;}
+.container, #gameover {text-align: center;}
+.container {margin: 0;}
+#snake_box, .label {margin: 5px;}
+body{
+	font-family: "Press Start 2P", sans-serif;
+	color: limegreen;
+	background-color: black;
+}
+body {
+	width: 300px;
+	height: 450px;
+	padding: 8px;
+	user-select: none;
+}
+#snake_box {
+	position: relative;
+	top: 0;
+	left: 0;
+	height: 400px;
+	width: 280px;
+	border: 2px solid Lime;
+}
+.container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	margin: 0;
+}
+#gameover {
+	font-size: 1.5em;
+	position: absolute;
+	top: 150px;
+	margin-left: 60px;
+	text-align: center;
+}
+.sb, #food {
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: none;
+	font-size: 1.35em;
+}
+#food {
+	display: none;
+	color: white;
+	z-index: -1;
+}
+#cov{
+	position: absolute;
+	z-index: 1;
+	font-size: 1.40em;
+	color: black;
+}
